@@ -65,5 +65,41 @@ $(document).ready(function () {
     });
 });
 
+// Logo
+var originalTimeout = 200;
+var clock;
+var max = 14;
+var timeout = originalTimeout;
+var zeiten = new Array(110, 80, 60, 50, 45, 50, 60, 80, 110, 150, 200, 300, 400);
+var counter = 0;
 
+var inc = function() {
+    if (clock) {
+        if (clock.getTime() < max) {
+            if (clock.getTime().time === (max - 3)) {
+                $('.logo').animate({left: 25}, 1000);
+            }
 
+            clock.increment();
+
+            timeout = zeiten[counter];
+            counter++;
+
+            window.setTimeout(inc, timeout);
+        }
+    }
+};
+
+$(document).ready(function() {
+    clock = $('.clock').FlipClock(0, {
+        clockFace: 'Counter',
+        minimumDigits: 2,
+        callbacks: {
+            create: function() {
+                window.setTimeout(function() {
+                    $('.clock').fadeIn(1000, inc);
+                }, 1000);
+            }
+        }
+    });
+});

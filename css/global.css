@@ -733,3 +733,53 @@ only screen and (min-device-pixel-ratio: 1.5) {
 
 
 
+/* ------------------------------------------------------- */
+.clock {
+    margin:20px;
+    
+    transform-origin: 0 0;
+    transform: scale(2.50);
+    -ms-transform: scale(2.50);
+    -webkit-transform-origin: 0 0;
+    -webkit-transform: scale(2.50);
+    -o-transform-origin: 0 0;
+    -o-transform: scale(2.50);
+    -moz-transform-origin: 0 0;
+    -moz-transform: scale(2.50);
+}
+
+.logo-wrapper {
+    height: 350px;
+}
+
+.logo-box {
+    position: absolute;
+    top: 20px;
+    left: 120px;
+    width: 330px;
+    height: 60px;
+    padding-left: 120px;
+    overflow: hidden;
+}
+
+.logo {
+    width: 300px;
+    height: 60px;
+    background-color: transparent;
+    color: #333;
+/*    font-family: 'Spinnaker', sans-serif; */
+    font-family: 'TrajanPro', 'Cinzel', sans-serif;
+    text-align: left;
+    line-height: 60px;
+    font-size: 40px;
+    position: absolute;
+    left: -300px;
+    border-radius: 5px;
+    
+    text-shadow: 0 0 5px rgba(255,255,255,.55);
+}
+
+.subscribe a {
+    
+}
+/* ------------------------------------------------------- */
