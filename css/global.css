@@ -779,7 +779,13 @@ only screen and (min-device-pixel-ratio: 1.5) {
     text-shadow: 0 0 5px rgba(255,255,255,.55);
 }
 
-.subscribe a {
-    
+.subscribe button {
+    border: none;
+    background-color: #428bca;
+    color: #fff;
+    font-size: 30px;
+    width: 200px;
+    border-radius: 6px;
+    box-shadow: 4px 4px 10px #555;
 }
 /* ------------------------------------------------------- */
