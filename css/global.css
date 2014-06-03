@@ -295,7 +295,7 @@ only screen and (min-device-pixel-ratio: 1.5) {
 
 /* Countdown panel */
 .panel-countdown {
-    margin: 107px 0;
+    margin: 77px 0;
     display: none;
 }
 
@@ -384,7 +384,7 @@ only screen and (min-device-pixel-ratio: 1.5) {
 
 /* Services panel */
 .panel-services {
-    margin: 126px 0;
+    margin: 100px 0;
     display: none;
 }
 
@@ -736,6 +736,7 @@ only screen and (min-device-pixel-ratio: 1.5) {
 /* ------------------------------------------------------- */
 .clock {
     margin:20px;
+    width: 500px;
     
     transform-origin: 0 0;
     transform: scale(2.50);
@@ -749,7 +750,7 @@ only screen and (min-device-pixel-ratio: 1.5) {
 }
 
 .logo-wrapper {
-    height: 350px;
+    height: 300px;
 }
 
 .logo-box {
