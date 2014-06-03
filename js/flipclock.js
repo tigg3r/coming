@@ -170,8 +170,6 @@ var FlipClock;
 			digit = 0;
 		}
 
-		console.log(options);
-
 		return new FlipClock.Factory(obj, digit, options);
 	};
 
